@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PracticalTest001Var05MainActivity">
+
+    <!-- Non-editable TextView to display the button log -->
+    <TextView
+        android:id="@+id/display_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:padding="16dp"
+        android:text="Button log will appear here"
+        android:textSize="18sp"
+        android:background="#E0E0E0"
+        android:gravity="center"
+        android:editable="false" />
+
+    <!-- Button to navigate to AnotherActivity -->
+    <Button
+        android:id="@+id/transfer_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:text="Transfer" />
+
+    <!-- Button to navigate to top-left corner -->
+    <Button
+        android:id="@+id/top_left_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Top Left" />
+
+    <!-- Button to navigate to top-right corner -->
+    <Button
+        android:id="@+id/top_right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/transfer_button"
+        android:text="Top Right" />
+
+    <!-- Button to navigate to bottom-left corner -->
+    <Button
+        android:id="@+id/bottom_left_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:text="Bottom Left" />
+
+    <!-- Button to navigate to bottom-right corner -->
+    <Button
+        android:id="@+id/bottom_right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="Bottom Right" />
+
+    <!-- Center Button -->
+    <Button
+        android:id="@+id/center_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Center" />
+
+</RelativeLayout>
